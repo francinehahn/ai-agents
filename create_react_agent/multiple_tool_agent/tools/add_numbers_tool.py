@@ -5,7 +5,7 @@ from langchain.tools import tool
 @tool
 def add_numbers(inputs: str) -> Dict:
     """
-    Adds a list
+    Extracts numbers so we can sum all of them
     """
     print("add numbers tool being used...")
     numbers = [int(num) for num in re.findall(r"\d+", inputs)]

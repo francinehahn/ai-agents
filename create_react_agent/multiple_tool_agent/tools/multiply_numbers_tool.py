@@ -5,7 +5,7 @@ from langchain.tools import tool
 @tool
 def multiply_numbers(inputs: str) -> Dict:
     """
-    Extracts numbers
+    Extracts numbers so we can multiply all of them
     """
     print("multiply numbers tool being used...")
 

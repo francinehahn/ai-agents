@@ -5,7 +5,7 @@ from langchain.tools import tool
 @tool
 def divide_numbers(inputs: str) -> Dict:
     """
-    Extracts numbers
+    Extracts only numbers so we can divide them
     """
     print("divide numbers tool being used...")
     numbers = [int(num) for num in re.findall(r"\d+", inputs)]

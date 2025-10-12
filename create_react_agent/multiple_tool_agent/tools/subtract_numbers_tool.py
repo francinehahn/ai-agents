@@ -5,7 +5,7 @@ from langchain.tools import tool
 @tool
 def subtract_numbers(inputs: str) -> Dict:
     """
-    Extracts numbers
+    Extracts numbers so we can subtract them
     """
     print("subtract numbers tool being used...")
 
