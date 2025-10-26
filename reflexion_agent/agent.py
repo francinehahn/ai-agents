@@ -7,7 +7,7 @@ from pydantic import BaseModel, Field
 
 from langchain_cohere.chat_models import ChatCohere
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-from langchain_core.messages import HumanMessage, ToolMessage, BaseMessage, AIMessage
+from langchain_core.messages import HumanMessage, ToolMessage, BaseMessage
 from langchain_community.tools.tavily_search import TavilySearchResults
 from langgraph.graph import END, StateGraph
 
