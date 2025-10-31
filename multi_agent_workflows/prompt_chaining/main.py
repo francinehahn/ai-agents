@@ -1,7 +1,7 @@
-from multi_agent_workflows.create_cover_letter.agent import MultiAgentWorkflow
+from agent import Agent
 
 def main():
-    agent = MultiAgentWorkflow()
+    agent = Agent()
 
     input_state = {
         "job_description": "We are looking for a data scientist with experience in machine learning, NLP, and Python. Prior work with large datasets and experience deploying models into production is required."
@@ -11,5 +11,6 @@ def main():
     
     return result
 
-result = main()
-print(result)
+if __name__ == "__main__":
+    result = main()
+    print(result)

@@ -12,7 +12,7 @@ class ChainState(TypedDict):
     resume_summary: str
     cover_letter: str
 
-class MultiAgentWorkflow:
+class Agent:
     def __init__(self):
         self.llm = ChatCohere(
             cohere_api_key=os.environ.get("CO_API_KEY"), 
